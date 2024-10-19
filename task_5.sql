@@ -1,7 +1,7 @@
 -- Populating Your Database
 USE alx_book_store;
 
-INSERT INTO customer (
+INSERT INTO customers (
     customer_id, 
     customer_name, 
     email, 
