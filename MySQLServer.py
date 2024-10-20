@@ -5,14 +5,14 @@ import getpass
 def create_database():
     try:
         # Get username and password securely
-        username = input("Enter your MySQL username: ")
+        user_name = input("Enter your MySQL username: ")
         password = getpass.getpass("Enter your MySQL password: ")
         
         # Establish a connection to MySQL server
         connection = mysql.connector.connect(
-            host='localhost',
-            user=username,
-            password=password
+            host = 'localhost',
+            user = user_name,
+            password = password
         )
         
         if connection.is_connected():
